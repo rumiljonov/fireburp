@@ -1,0 +1,28 @@
+{
+
+  "manifest_version": 2,
+  "name": "Fireburp",
+  "version": "0.1",
+ 
+  "description": "Adds an http header to each request with container info",
+
+  "applications": {
+    "gecko": {
+      "id": "fireburp@mozilla.org",
+      "strict_min_version": "45.0"
+    }
+  },
+  "permissions": [
+          "webRequest",
+          "webRequestBlocking",
+          "<all_urls>",
+          "contextualIdentities",
+          "cookies"
+        ],
+
+  "background": {
+    "scripts": ["fireburp.js"]
+  }
+
+
+}
