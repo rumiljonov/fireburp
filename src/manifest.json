@@ -8,7 +8,7 @@
 
   "applications": {
     "gecko": {
-      "id": "fireburp@mozilla.org",
+      "id": "fireburp@rumiljonov",
       "strict_min_version": "45.0"
     }
   },
