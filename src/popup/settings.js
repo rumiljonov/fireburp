@@ -6,10 +6,11 @@ function renderPage(_containers, _checked) {
 	_containers.forEach((c) => {
 		var template = `
 		<tr>
-		<td>${c.name}</td> 
+		<td><font color="${c.colorCode}">${c.name}</font></td> 
 		<td> 
 			<label class="switch"> 
-			  <input class=checkbox cookie="${c.cookieStoreId}" type="checkbox" ${_checked.includes(c.cookieStoreId)? 'checked' : '' }> 
+			  <input class=checkbox _color="${c.colorCode}" cookie="${c.cookieStoreId}" type="checkbox" ${_checked.includes(c.cookieStoreId)? 'checked' : '' }> 
+			  <span class="slider round"></span>
 			</label>
 		</td> 
 		</tr>`;
@@ -26,11 +27,12 @@ async function checkboxAction(elem){
 	var cookieStoreId = this.getAttribute("cookie");
 	if (this.checked) {
 		checked.push(cookieStoreId);
+		//this.nextSibling.nextSibling.style.backgroundColor = this.getAttribute("_color");
 	}
 	else {
 		checked = checked.filter(function(e){ return e != cookieStoreId});
-	}
-	console.log(checked);
+		//this.nextSibling.nextSibling.style.backgroundColor = this.getAttribute("#ccc");
+	}	
 	browser.storage.local.set({checked: checked });
 	
 	
