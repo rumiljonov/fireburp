@@ -1,3 +1,5 @@
+<img src=src/icons/fireburp.png width=200>
+
 # fireburp
 
 Simply sends `fireburp: <container_name>;<color>` header. To highlight it later in Burp proxy.
