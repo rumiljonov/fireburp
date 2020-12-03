@@ -36,7 +36,7 @@ async function addContainerHeader(e) {
 
   await browser.contextualIdentities.get(e.cookieStoreId).then(
   	function(identity){
-  		containerHeader.value = [identity.name, identity.color].join(';');
+  		containerHeader.value = [identity.color].join(';'); //[identity.name, identity.color].join(';');
   	}
   )
   
