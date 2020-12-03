@@ -1,8 +1,7 @@
 {
-
   "manifest_version": 2,
   "name": "Fireburp",
-  "version": "0.1",
+  "version": "0.2",
  
   "description": "Adds an http header to each request with container info",
 
@@ -17,12 +16,20 @@
           "webRequestBlocking",
           "<all_urls>",
           "contextualIdentities",
-          "cookies"
+          "storage"
         ],
-
+  "icons": {
+    "128": "icons/fireburp.png"
+  },
   "background": {
     "scripts": ["fireburp.js"]
-  }
+  },
+
+ "browser_action": {
+   "default_icon": "icons/fireburp.png",
+   "default_title": "Settings",
+   "default_popup": "popup/settings.html"
+ }
 
 
 }
