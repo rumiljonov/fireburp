@@ -6,7 +6,7 @@ Sends `fireburp: <color>` header. To highlight it later in Burp proxy.
 
 ## Instalation
 
-- Download and install this firefox addon (currenly only from github releases)
+- Download and install [this](https://addons.mozilla.org/addon/fireburp/) firefox addon
 - Download my forked version of request-highlighter [here](https://github.com/rumiljonov/request-highlighter) and add it to Burp plugins
 
 
