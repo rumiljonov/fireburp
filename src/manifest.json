@@ -1,13 +1,13 @@
 {
   "manifest_version": 2,
   "name": "Fireburp",
-  "version": "0.3",
+  "version": "1.0",
  
   "description": "Adds an http header to each request with container info",
 
   "applications": {
     "gecko": {
-      "id": "fireburp@rumiljonov"
+      "id": "fireburp@r.komildzhonov"
     }
   },
   "permissions": [
